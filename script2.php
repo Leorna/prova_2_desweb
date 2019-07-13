@@ -15,6 +15,7 @@
 
     if (!$dados) {
         echo "<p>Dados nao encontrados</p>";
+        fclose($file);
         die();
     }
     
@@ -27,6 +28,7 @@
     }
     
     echo "<p>Soma dos dados = $soma</p>";
+    fclose($file);
 ?>
 
 
